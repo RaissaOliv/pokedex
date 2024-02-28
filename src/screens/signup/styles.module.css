@@ -1,0 +1,82 @@
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a7d0ad6d-8109-4e1c-aa4c-8a27833f1034/dfbxi4z-17d05efe-b453-447f-8192-860bc5ad2566.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E3ZDBhZDZkLTgxMDktNGUxYy1hYTRjLThhMjc4MzNmMTAzNFwvZGZieGk0ei0xN2QwNWVmZS1iNDUzLTQ0N2YtODE5Mi04NjBiYzVhZDI1NjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XwpwXz_OIBIWJeI_mgAYX6KHmjQqBhbXksdKgPrcbsM");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.title {
+    color: white;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    align-self: center;
+    font-size: 30px;
+}
+
+h3 {
+    color:#000;
+    align-self: center;
+}
+
+.loginHeader {
+    width: 50%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+}
+.cadastro {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    height: 80.5vh;
+}
+
+.img {
+    width: 20%;
+    height: 26%;
+    margin-left: 2%;
+}
+.inputs{
+    border-color: black;
+    background-color: white;
+    border-radius: 12px;
+    color: #000;
+    margin: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+}
+
+.inputs:focus{
+    outline: none;
+    border-color: #F56960;
+}
+
+.button {
+    transition: all .5s ease;
+    border-color: red;
+    background-color: white;
+    border-radius: 12px;
+    color: red;
+    margin: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+}
+.button:hover{
+    border-color: transparent;
+    background-color: #ED254E;
+    color: white;
+}
