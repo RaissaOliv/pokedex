@@ -2,7 +2,7 @@ body {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a7d0ad6d-8109-4e1c-aa4c-8a27833f1034/dfbxi4z-17d05efe-b453-447f-8192-860bc5ad2566.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E3ZDBhZDZkLTgxMDktNGUxYy1hYTRjLThhMjc4MzNmMTAzNFwvZGZieGk0ei0xN2QwNWVmZS1iNDUzLTQ0N2YtODE5Mi04NjBiYzVhZDI1NjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XwpwXz_OIBIWJeI_mgAYX6KHmjQqBhbXksdKgPrcbsM");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .title {
@@ -10,22 +10,25 @@ body {
     margin-bottom: 1%;
     margin-left: 2%;
     align-self: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-h3 {
-    color:#000;
-    align-self: center;
+.subtitle{
+    font-size: 25px;
+    margin-top: 8%;
 }
+
 
 .loginHeader {
-    width: 50%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: red;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    position: absolute;
+    top: 0; 
+    left: 0;
     flex-direction: row;
     gap: 1%;
 }
@@ -37,30 +40,50 @@ h3 {
     flex-direction: column;
     background-color: white;
     position: absolute;
-    width: 50%;
-    height: 80.5vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
 
 .img {
     width: 20%;
-    height: 26%;
     margin-left: 2%;
+    align-self: center;
 }
 .inputs{
-    border-color: black;
+    border-color: transparent;
     background-color: white;
     border-radius: 12px;
-    color: #000;
+    border-width: thin;
+    color: black;
     margin: 1%;
     margin-bottom: 1%;
     padding: 1%;
+    padding-left: 2%;
+    padding-right: 3%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 40%;
+    width: 50%;
+    background-color: antiquewhite;
 }
-
+.inputs::placeholder{
+    color: #151515;
+    opacity: 0.5;
+    font-size: 12px;
+}
 .inputs:focus{
     outline: none;
-    border-color: #F56960;
+
+}
+/* o código abaixo é para remover o contador presente nos input number.
+    há dois pois no firefox a primeira solução não funciona. */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .button {
@@ -69,8 +92,7 @@ h3 {
     background-color: white;
     border-radius: 12px;
     color: red;
-    margin: 1%;
-    margin-bottom: 1%;
+    margin-top: 3%;
     padding: 1%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 40%;
@@ -80,3 +102,38 @@ h3 {
     background-color: #ED254E;
     color: white;
 }
+
+/* responsividade exclusiva para pc. */
+@media (min-width: 600px) {
+    .cadastro {
+      width: 50%;
+      height: 99vh;
+      padding-bottom: 0.5%;
+    }
+
+    .loginHeader {
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    .img {
+        width: 16%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .inputs{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .inputs::placeholder{
+        font-size: 16px;
+    }
+
+    .button{
+        margin-top: 3%;
+    }
+  }

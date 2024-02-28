@@ -10,9 +10,8 @@ export default function SignUp(){
     const[nascimento, setBirthdate] = useState("")
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); /*para a tela não recarregar sem necessidade*/
         let values = [nome, cpf, email, telefone, sexo, nascimento]
-
         try{
             for(let i = 0; i < values.length; i++){
                 if(isEmpty(values[i])) throw new Error("Um dos inputs está vazio.")
@@ -30,34 +29,31 @@ export default function SignUp(){
     }
 
     return(
-        <>
-            <div>
-            <div className={styles.loginHeader}>
-                    <img src={pokeball} alt="pokeball" className={styles.img}/>
-                    <h2 className={styles.title}>Pokédex</h2>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <div className={styles.cadastro}>
+                    <div className={styles.loginHeader}>
+                        <img src={pokeball} alt="pokeball" className={styles.img}/>
+                        <h2 className={styles.title}>Pokédex</h2>
                     </div>
-                <form onSubmit={handleSubmit}>
-
-                    <div className={styles.cadastro}>
-                        <h2>Faça seu cadastro</h2>
+                    <h1 className={styles.subtitle}>Faça seu cadastro</h1>
                     <input className={styles.inputs}
-                    type="text" placeholder="nome" id="nome" value={nome} onChange={(e) => setnome(e.target.value)}/>
+                        type="text" placeholder="nome" id="nome" value={nome} onChange={(e) => setnome(e.target.value)}/>
                     <input className={styles.inputs}
-                    type="text" id="cpf" placeholder="cpf" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
+                        type="text" id="cpf" placeholder="cpf" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
                     <input className={styles.inputs} 
-                    type="text" placeholder="e-mail" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                        type="text" placeholder="e-mail" id="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <input className={styles.inputs}
-                    type="text" id="phonenum" value={telefone} placeholder="telefone" onChange={(e) => setPhonenum(e.target.value)}/>
+                        type="number" id="phonenum" value={telefone} placeholder="telefone" onChange={(e) => setPhonenum(e.target.value)}/>
                     <input className={styles.inputs}
-                    type="text" placeholder="sexo" id="gender" value={sexo} onChange={(e) => setGender(e.target.value)}/>
-                    <p className={styles.birthday}>Data de nascimento</p>
+                        type="text" placeholder="sexo" id="gender" value={sexo} onChange={(e) => setGender(e.target.value)}/>
+                    <p>Data de nascimento</p>
                     <input className={styles.inputs}
-                    type="date" id="birthdate" placeholder="data de nascimento"value={nascimento} onChange={(e) => setBirthdate(e.target.value)}/>
+                          type="date" id="birthdate" placeholder="data de nascimento"value={nascimento} onChange={(e) => setBirthdate(e.target.value)}/>
                     <br/>
-                    <input type="submit" className={styles.button}/>
+                    <button type="submit" className={styles.button}>Enviar</button>
                 </div>
-                </form>
+            </form>
         </div>
-        </>
     )
 }
