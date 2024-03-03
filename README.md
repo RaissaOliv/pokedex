@@ -1,9 +1,9 @@
 # Running the project
-Clone the rep
+Clone the rep<br/>
 `git clone https://github.com/RaissaOliv/pokedex.git`<br/>
 access the project archive<br/>
 `cd pokedex`<br/>
 install the deps<br/>
-`npm install`
+`npm install`<br/>
 run the project<br/>
 `npm start`
