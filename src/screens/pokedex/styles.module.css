@@ -1,0 +1,108 @@
+.mainScreen {
+    background-color: #1b1b1b;
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button {
+    align-self: center;
+    background-color: #151515;
+    width: 50%;
+    padding: 2%;
+}
+h1, p, h4 {
+    color: #FFF
+}
+
+.header {
+    margin-top: 1%;
+}
+
+.title{
+    font-family: 'Pokemon Solid', sans-serif;
+    color:rgb(255, 245, 58);
+    text-shadow: 0 0 3px #000, 0 0 8px #7ba9ff;
+}
+
+.inputs{
+    border-color: transparent;
+    background-color: white;
+    border-radius: 12px;
+    border-width: thin;
+    color: black;
+    padding: 2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.inputs:focus{
+    outline: none;
+
+}
+
+.inputs::placeholder{
+    color: #151515;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}   
+
+.pokentry {
+    background-color: rgb(84, 84, 84);
+    border-radius: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.pokeImg{
+    width: 70%;
+    margin: 5%;
+    border-bottom: 2px solid rgb(52, 52, 52);
+    background-color: #757575;
+    border-radius: 4%;
+}
+
+.imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokeName{
+    margin-top: 2%;
+    align-self: center;
+    margin-bottom: 2%;
+    color: #FFF;
+}
+
+.error{
+    font-size: 50px;
+    color: #FFF;
+}
+.abilities{
+
+    align-self: center;
+    margin-bottom: 0%;
+    color: #000;
+
+}
+.pokelist{
+    align-self: flex-start;
+}
+.searchDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}

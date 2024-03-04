@@ -15,7 +15,7 @@ body {
 
 .subtitle{
     font-size: 25px;
-    margin-top: 8%;
+    margin-top: 20%;
 }
 
 
@@ -84,23 +84,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 input[type="number"] {
     -moz-appearance: textfield;
-}
-
-.button {
-    transition: all .5s ease;
-    border-color: red;
-    background-color: white;
-    border-radius: 12px;
-    color: red;
-    margin-top: 3%;
-    padding: 1%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 40%;
-}
-.button:hover{
-    border-color: transparent;
-    background-color: #ED254E;
-    color: white;
 }
 
 /* responsividade exclusiva para pc. */

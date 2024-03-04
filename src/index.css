@@ -12,3 +12,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  transition: all .5s ease;
+  border-color: red;
+  background-color: white;
+  border-radius: 12px;
+  color: red;
+  margin-top: 3%;
+  padding: 1%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 40%;
+}
+button:hover{
+  border-color: transparent;
+  background-color: #ED254E;
+  color: white;
+}
