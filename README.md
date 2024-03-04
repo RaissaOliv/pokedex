@@ -1,7 +1,7 @@
 # About the project
 React project using the pokemon API. Contains a simple signup screen and an actual api requester screen, in which you type the name of the pokemon you'd like to search and the code will get an answer from the API. 
 
-# requirements
+# Requirements
 - node.js/npm
 # Running the project
 <h3>Clone the rep<h3/>
