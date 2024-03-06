@@ -1,7 +1,7 @@
 import axios from 'axios';
 async function getPokemon(name){
     try {
-        const response = await axios.get('https://pokeapi.co/api/v2/pokemon/' + name);
+        const response = await axios.get('https://pokeapi.co/api/v2/pokemon/' + name.toLowerCase());
         console.log(response);
         return response.data
       } catch (error) {

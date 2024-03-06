@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-import pokeball from '../signup/pokeball.png'
 import { useState } from 'react'
 import getPokemon from '../../api/pokeRequests'
 export default function Pokedex(){
